@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Conversor de Unidades</h1>
+            <p>Una herramienta sencilla para tus conversiones diarias.</p>
+        </header>
+
+        <form id="conversor-form">
+            <div class="form-group">
+                <label for="tipo">Tipo de Conversión:</label>
+                <select id="tipo" name="tipo">
+                    <option value="longitud">Longitud</option>
+                    <option value="peso">Peso</option>
+                    <option value="temperatura">Temperatura</option>
+                </select>
+            </div>
+
+            <div class="conversion-fields">
+                <div class="form-group">
+                    <label for="valor">Valor:</label>
+                    <input type="number" id="valor" name="valor" step="any" required placeholder="Ej: 100">
+                </div>
+                <div class="form-group">
+                    <label for="unidadDe">De:</label>
+                    <select id="unidadDe" name="de"></select>
+                </div>
+                <div class="arrow">→</div>
+                <div class="form-group">
+                    <label for="unidadA">A:</label>
+                    <select id="unidadA" name="a"></select>
+                </div>
+            </div>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <div id="resultado-container">
+            <p id="resultado">El resultado aparecerá aquí...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado con FastAPI y JavaScript puro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
