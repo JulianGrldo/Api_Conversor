@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultadoP = document.getElementById('resultado');
 
     // Mapeo de unidades por tipo de conversión
+    // CORRECCIÓN: Se eliminan las tildes para que coincida con el backend.
     const unidades = {
-        longitud: ['Metro', 'Kilómetro', 'Centímetro', 'Milla'],
+        longitud: ['Metro', 'Kilometro', 'Centimetro', 'Milla'],
         peso: ['Gramo', 'Kilogramo', 'Libra', 'Onza'],
         temperatura: ['Celsius', 'Fahrenheit', 'Kelvin']
     };
